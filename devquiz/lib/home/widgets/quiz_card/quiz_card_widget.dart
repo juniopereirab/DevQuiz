@@ -7,6 +7,7 @@ class QuizCardWidget extends StatelessWidget {
   final String completed;
   final double percent;
   final VoidCallback onTap;
+  final String image;
 
   const QuizCardWidget({
     Key? key,
@@ -14,6 +15,7 @@ class QuizCardWidget extends StatelessWidget {
     required this.completed,
     required this.percent,
     required this.onTap,
+    required this.image,
   }) : super(key: key);
 
   @override
@@ -37,7 +39,7 @@ class QuizCardWidget extends StatelessWidget {
             Container(
               height: 40,
               width: 40,
-              child: Image.asset(AppImages.blocks),
+              child: Image.asset(image),
             ),
             SizedBox(
               height: 20,

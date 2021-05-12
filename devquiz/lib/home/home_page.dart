@@ -71,6 +71,7 @@ class _HomePageState extends State<HomePage> {
                         .map(
                           (quiz) => QuizCardWidget(
                             title: quiz.title,
+                            image: AppImages.data,
                             completed:
                                 "${quiz.questionsAnswered}/${quiz.questions.length}",
                             percent:
